@@ -1,4 +1,4 @@
-class SonyTV{
+class FortunerCar{
     
 	static boolean isSwitch;
 	static int maxTemperature=5;
@@ -11,15 +11,15 @@ class SonyTV{
 				
 		   if(isSwitch==false){;
 		   isSwitch=true;
-		   System.out.println("TV is on:"+isSwitch);
+		   System.out.println("Car is on:"+isSwitch);
 	        }
 			else{
 			isSwitch=false;
-			System.out.println("TV state is off:"+isSwitch);
+			System.out.println("Car state is off:"+isSwitch);
 		    }
 		    System.out.println("onORoff method ended");
 		
 		    return isSwitch;
 	}
 	    
-    }
+}

@@ -1,4 +1,4 @@
-class SonyTV{
+class WhirlpoolAC{
     
 	static boolean isSwitch;
 	static int maxTemperature=5;
@@ -11,11 +11,11 @@ class SonyTV{
 				
 		   if(isSwitch==false){;
 		   isSwitch=true;
-		   System.out.println("TV is on:"+isSwitch);
+		   System.out.println("AC is on:"+isSwitch);
 	        }
 			else{
 			isSwitch=false;
-			System.out.println("TV state is off:"+isSwitch);
+			System.out.println("AC state is off:"+isSwitch);
 		    }
 		    System.out.println("onORoff method ended");
 		
