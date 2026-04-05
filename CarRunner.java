@@ -1,15 +1,12 @@
-class CarRunner{
-    public static void main(String[] max) {
-        Car refInt = 788;
-        Car refDouble = 77.897;
-        Car refLong = 675765431L;
-        Car refBoolean = true;
-        Car refString = "Marthi";
-        System.out.println("Int " + Car .refInt);
-        System.out.println("Double " + Car.refDouble);
-        System.out.println("Long " + Car .refLong);
-        System.out.println("Boolean " +Car.refBoolean);
-        System.out.println("String " + Car.refString);
-    }
+class CarRunner
+{
+	public static void main(String [] args)
+	{
+		Car Zom1=new Car();
+	    Car Zom2=new Car();
+		Car Zom3=new Car();
+		Car Zom4=new Car();
+		Car Zom5=new Car();
+		
+	}
 }
-

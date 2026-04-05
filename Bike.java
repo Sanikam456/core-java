@@ -1,22 +1,30 @@
 class Bike {
-    public static void main(String[] bike) {
-String name = "Hero Splendor"; 
-byte gear = 4;                 
-short engine = 100;                
-int price = 75000;             
-long id = 9988776655L;         
-float mileage = 65.5f;        
-double fuel = 9.85432;         
-char model = 'G';              
-boolean isElectric = false;    
-System.out.println("Name: " + name);
-System.out.println("Gear: " + gear);
-System.out.println("Engine: " +engine );
-System.out.println("Price: " + price);
-System.out.println("Id:"+id);
-System.out.println("Mileage: " + mileage);
-System.out.println("Fuel: " + fuel);
-System.out.println("Model: " + model);
-System.out.println("Electric: " + isElectric);
-}
+
+    public  Bike() {
+        this("Yamaha");
+        System.out.println("Default Constructor Execution Finished");
+    }
+
+    public Bike(String brand) {
+        this("Yamaha", "R1");
+        System.out.println("Default Constructor Execution Finished");
+    }
+
+    public Bike(String brand, String model) {
+        this(brand, model, "Petrol");
+        System.out.println("Model: " + model);
+    }
+
+    public Bike(String brand, String model, String fuelType) {
+        this(brand, model, fuelType, 15000.00);
+        System.out.println("Fuel Type: " + fuelType);
+    }
+
+    public Bike(String brand, String model, String fuelType, double price) {
+        System.out.println("BASE CONSTRUCTOR REACHED");
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println("Fuel Type: " + fuelType);
+        System.out.println("Price: " + price);
+    }
 }
