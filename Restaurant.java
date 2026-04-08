@@ -1,32 +1,65 @@
-class Restaurant {
+ class Restaurant {
 
-    public Restaurant() {
-        this("Foodies");
-        System.out.println("Default Constructor Finished");
+    String restaurantName;
+    String location;
+    int numberOfTables;
+    int numberOfStaff;
+    String managerName;
+    double averageBill;
+    int establishedYear;
+    String cuisineType;
+    static String country = "India";
+    static String category = "Hospitality";
+
+    public String takeOrder(String customerName) {
+        System.out.println("Order taken for: " + customerName);
+        return customerName;
     }
 
-    public Restaurant(String name) {
-        this(name, "Downtown");
-        System.out.println("Name Constructor Finished");
+    public int addTables(int count) {
+        numberOfTables += count;
+        System.out.println("Total Tables: " + numberOfTables);
+        return numberOfTables;
     }
 
-    public Restaurant(String name, String location) {
-        this(name, location, 50);
-        System.out.println("Location Constructor Finished");
+    public int hireStaff(int count) {
+        numberOfStaff += count;
+        System.out.println("Total Staff: " + numberOfStaff);
+        return numberOfStaff;
     }
 
-    public Restaurant(String name, String location, int seats) {
-        this(name, location, seats, true);
-        System.out.println("Seats Constructor Finished");
+    public String assignManager(String manager) {
+        System.out.println("Manager Assigned: " + manager);
+        return manager;
     }
 
-    public Restaurant(String name, String location, int seats, boolean deliveryAvailable) {
-        System.out.println("BASE CONSTRUCTOR");
-        System.out.println("Restaurant Name: " + name);
-        System.out.println("Location: " + location);
-        System.out.println("Seats: " + seats);
-        System.out.println("Delivery Available: " + deliveryAvailable);
+    public boolean openRestaurant(boolean status) {
+        System.out.println("Restaurant Open: " + status);
+        return status;
     }
 
-    
+    public boolean closeRestaurant(boolean status) {
+        System.out.println("Restaurant Closed: " + status);
+        return status;
+    }
+
+    public double collectBill(double amount) {
+        System.out.println("Bill Collected: " + amount);
+        return amount;
+    }
+
+    public String organizeEvent(String eventName) {
+        System.out.println("Event Organized: " + eventName);
+        return eventName;
+    }
+
+    public boolean maintainHygiene(boolean status) {
+        System.out.println("Hygiene Maintained: " + status);
+        return status;
+    }
+
+    public String upgradeRestaurant(String upgradeType) {
+        System.out.println("Restaurant Upgraded: " + upgradeType);
+        return upgradeType;
+    }
 }
