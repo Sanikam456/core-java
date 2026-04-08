@@ -1,6 +1,0 @@
-class InstagramRunner{
-public static void main(String[] args){
-    System.out.println("First Line method Call");
-    String status = Instagram.validateAndRegister(9686003998l, "Chandu@123", "04-11-2006", "itsmesanuu", "sanika");
-    System.out.println(status);
-}
